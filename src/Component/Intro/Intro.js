@@ -36,14 +36,27 @@ const Intro = () => {
                 <img src={boy} alt="" />
                 <img src={glassimogi} alt="" />
 
-                <div style={{top: '-4%', left: '68%'}}>
+                <div style={{ top: '-4%', left: '68%' }}>
                     <FlotingDiv image={crown} text1={'Web'} text2={'Developer'}></FlotingDiv>
                 </div>
 
-                <div style={{top: '64%', left: '0rem'}}>
+                <div style={{ top: '64%', left: '0rem' }}>
                     <FlotingDiv image={thumb} text1={'Best Design'} text2={"Award"}></FlotingDiv>
                 </div>
-                
+
+                <div className="blur" style={{ background: 'rgb(238 210 255)' }}>
+                </div>
+
+                <div className="blur"
+                    style={{
+                        background: '#C1F5FF',
+                        top: '16rem',
+                        width: '21rem',
+                        height: '11rem',
+                        left: '-6rem'
+                    }}
+                ></div>
+
             </div>
         </div>
     );
