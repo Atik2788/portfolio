@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css'
+import { themeContext } from '../../Context';
 
 const Contact = () => {
 
@@ -21,10 +22,16 @@ const Contact = () => {
     };
 
 
-
+    const theme = useContext(themeContext)
+    const darkMode = theme.state.darkMode;
 
     return (
-        <div className='contact-form'>
+        <div id='Contact' className='contact-form grid lg:grid-cols-2'
+        style={{
+            // background: darkMode ? 'black' : '#eaeeef',
+            color: darkMode? 'white' : '#202527'
+          }}
+        >
 
             <div className='m-left'>
                 <div className="awesome">

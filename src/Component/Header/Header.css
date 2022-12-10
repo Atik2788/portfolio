@@ -1,0 +1,20 @@
+.bg-img{
+    background-image: url('https://i.ibb.co/M7FndgS/UGEY.gif');
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    /* position: relative; */
+    background-repeat: no-repeat;    
+    background-position: center;
+
+    color: white;
+}
+
+
+.b-black{
+    background-color: rgba(0, 0, 0, 0.347);
+}
+
+.b-blackHeader{
+    filter: drop-shadow( 0px 0px 10px rgb(8, 234, 238));
+}

@@ -1,32 +1,50 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Portfolio.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import Slider from '../../img/sidebar.png';
 import Ecomers from '../../img/ecommerce.png';
 import Hoc from '../../img/hoc.png';
 import 'swiper/css'
+import { themeContext } from '../../Context';
+import { Link } from 'react-router-dom';
+
+
 
 const Portfolio = () => {
-    return (
-        <div className="portfolio">
-            {/* heading */}
-            <span>Recent Projects</span>
-            <span>Portfolio</span>
 
-            {/* slider */}
+    const theme = useContext(themeContext)
+    const darkMode = theme.state.darkMode;
+
+
+    return (
+        <div className="portfolio" 
+        style={{
+            color: darkMode? 'white' : '#202527'
+          }}
+        >
+
+            <span>Recent Projects</span>
+
         <Swiper
         spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
         className='portfolio-slider'
         >
-            <SwiperSlide>
-                <img src={Slider} alt=""/>
-            </SwiperSlide>
+            
+                <a href="https://daisyui.com/docs/install/">
+                <SwiperSlide>
+                    <img src={Slider} alt=""/>
+                    <p>this is </p>
+                </SwiperSlide>
+                </a>
+          
 
+            <Link>
             <SwiperSlide>
-                <img src={Ecomers} alt="" />
+                <img src='https://i.ibb.co/M5TDX1L/UGEY-1.gif' alt="" />
             </SwiperSlide>
+            </Link>
 
             <SwiperSlide>
                 <img src={Hoc} alt="" />
