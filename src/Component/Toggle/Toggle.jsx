@@ -9,11 +9,15 @@ const Toggle = () => {
 
     const theme = useContext(themeContext)
     const darkMode = theme.state.darkMode;
+
+    const handleClick = () =>{
+        theme.dispatch({type: 'toggle'})
+    }
     
 
 
     return (
-        <div className='toggle w-[80px] flex justify-between rounded-full p-1 relative'>
+        <div className='toggle w-[80px] flex justify-between rounded-full p-1 relative' onClick={handleClick}>
           <BsFillSunFill/>
            <CiDark/>
 
