@@ -3,6 +3,7 @@ import Header from '../LeftSide/Header/Header';
 import Toggle from '../Toggle/Toggle';
 import './Navbar.css'
 import { themeContext } from '../../Context';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -30,8 +31,8 @@ const Navbar = () => {
                     <div className='hidden lg:flex items-center lg:n-right'>
                         <div className='n-list'>
                             <ul>
-                                <li>Home</li>
-                                <li>About</li>
+                                <Link to='/'><li>Home</li></Link>
+                                <Link to='/blog'><li>Blog</li></Link>
                                 {/* <li>Services</li> */}
                                 <li>Projects</li>
                             </ul>

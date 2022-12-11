@@ -22,7 +22,7 @@ const Header = () => {
         <div className='lg:p-4 mx-auto text-center'
 
         >
-            <div className='bg-[#c9eef7] p-3 rounded-lg'
+            <div className='p-3 rounded-lg'
                 style={{
                     background: darkMode ? '#313b3e' : '#6c9da8db',
                     color: darkMode ? 'white' : 'black'

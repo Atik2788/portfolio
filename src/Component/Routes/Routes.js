@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Blog from "../Blog/Blog";
 import Home from "../Home/Home";
 import Main from "../Main/Main";
 import Project1 from "../RightSide/All Porjects/ProjectsSec/Project1";
@@ -26,6 +27,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/project3',
                 element: <Project3></Project3>
+            },
+            {
+                path: '/blog',
+                element: <Blog></Blog>
             }
         ]
     }
