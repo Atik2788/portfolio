@@ -7,28 +7,26 @@ const PersonalInfo = () => {
 
 
     return (
-        <div className='lg:p-4 mt-4 lg:mt-[-15px] mx-auto text-center'
-
-        >
-            <div className='bg-[#c9eef7] p-3 rounded-lg'
+        <div className='lg:p-4 mt-4 lg:mt-[-15px] mx-auto text-center'>
+            <div className=' p-3 rounded-lg'
                 style={{
                     background: darkMode ? '#313b3e' : '#6c9da8db',
                     color: darkMode ? 'white' : 'black'
                 }}
             >
-                <h2 className='text-lg font-bold'>Personal Information</h2>
+                <h2 className='text-lg font-bold '>Personal Information</h2>
 
                 <div className='text-left'>
                     <div>
-                        <p className='text-sm font-bold mt-2'>Education:</p>
-                        <p className='text-xs font-semibold'>BBA (Hon's in management)</p>
+                        <p className='text-sm font-bold mt-2 underline'>Education</p>
+                        <p className='text-xs font-semibold mt-1'>BBA (Hon's in management)</p>
                         <p className='text-xs font-semibold'>MBA running (Masters in management)</p>
 
 
-                        <p className='text-sm font-bold mt-3'>Info:</p>
+                        <p className='text-sm font-bold mt-3 underline'>Info</p>
                         <div className='flex mt-1'>
 
-                            <div className='text-xs mr-5'>
+                            <div className='text-xs mr-3'>
                                 <p className='text-xs font-bold'>Date of Birth</p>
                                 <p className='text-xs font-bold'>Nationality:</p>
                                 <p className='text-xs font-bold'>Gender</p>
@@ -36,7 +34,7 @@ const PersonalInfo = () => {
                                 <p className='text-xs font-bold'>Religion</p>
                             </div>
 
-                            <div className='text-xs mr-3'>
+                            <div className='text-xs mr-4'>
                                 <p className='text-xs font-bold'>:</p>
                                 <p className='text-xs font-bold'>:</p>
                                 <p className='text-xs font-bold'>:</p>
@@ -53,8 +51,8 @@ const PersonalInfo = () => {
                             </div>
                         </div>
 
-                        <p className='text-sm font-bold mt-3'>Address:</p>
-                        <p className='text-xs font-semibold'>Kishoreganj, Dhaka, Bangladesh</p>
+                        <p className='text-sm font-bold mt-3 underline'>Address</p>
+                        <p className='text-xs font-semibold mt-1 mb-3'>Kishoreganj, Dhaka, Bangladesh</p>
                     </div>
                 </div>
             </div>

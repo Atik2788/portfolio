@@ -8,9 +8,7 @@ const Skills = () => {
 
 
     return (
-        <div className='lg:p-4 mt-4 lg:mt-[-15px] mx-auto text-center'
-
-        >
+        <div className='lg:p-4 mt-4 lg:mt-[-15px] mx-auto text-center'>
             <div className='bg-[#c9eef7] p-3 rounded-lg'
                 style={{
                     background: darkMode ? '#313b3e' : '#6c9da8db',

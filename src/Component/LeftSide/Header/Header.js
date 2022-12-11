@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 import Resume from '../Resume.pdf'
 import { themeContext } from '../../../Context';
 import Atik1 from './atik1.png'
+import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
 
 import Particles from "react-tsparticles";
@@ -12,15 +13,6 @@ import Particles from "react-tsparticles";
 
 const Header = () => {
 
-    const particlesInit = (main) => {
-        console.log(main);
-
-    }
-
-    const particlesLoaded = (container) => {
-        console.log(container);
-
-    }
 
     const theme = useContext(themeContext)
     const darkMode = theme.state.darkMode;
@@ -37,14 +29,14 @@ const Header = () => {
                 }}
             >
                 <div className='mt-3'>
-                    <img src={Atik1} className='h-36 rounded-full mx-auto border border-2 border-[#ff9923]' alt="Image of Atikur Rahman" />
+                    <img src={Atik1} className='h-36 rounded-full mx-auto border-2 border-[#ff9923]' alt="Atikur Rahman Shanta" />
                 </div>
 
                 <div>
-                    <h1 className='text-lg font-bold'>
+                    <h1 className='text-lg font-bold mt-2'>
                         Md. Atikur Rahman Shanta
                     </h1>
-                    <div className=' mb-3 font-bold'>
+                    <div className='mb-7'>
                         <Typewriter
                             options={{
                                 autoStart: true,
@@ -59,8 +51,15 @@ const Header = () => {
                             }}
                         />
                     </div>
+
+                    <div className='my-4 flex gap-5 items-center justify-center'>
+                        <a target='_blank' href="https://www.facebook.com/atik.ahmed.75054/"><BsFacebook/></a>
+                        <a target='_blank' href="https://github.com/Atik2788"><BsGithub/></a>
+                        <a target='_blank' href="https://www.linkedin.com/in/md-atikur-rahman-shanta-88a182241/"><BsLinkedin/></a>
+                    </div>
+
                     <div className='mb-4 mt-5'>
-                        <a href={Resume} download className='mr-3'>
+                        <a href={Resume} download className=''>
                             <button className='button'>Download Resume</button>
                         </a>
                     </div>

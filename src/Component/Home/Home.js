@@ -17,7 +17,7 @@ const Home = () => {
                 }}
             >
 
-                <div className=' lg:flex gap-10 lg:px-7 p-2'>
+                <div className=' lg:flex gap-3 lg:px-7 p-2'>
                     <div className='lg:w-3/6 lg:mb-0 mb-5'>
                         <LeftSide></LeftSide>
                     </div>
