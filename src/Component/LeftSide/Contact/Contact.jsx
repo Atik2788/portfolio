@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css'
-import { themeContext } from '../../Context';
+import { themeContext } from '../../../Context';
 
 const Contact = () => {
 
@@ -15,7 +15,7 @@ const Contact = () => {
         .then((result) => {
             console.log(result.text);
             setDone(true)
-            form.reset('')
+            // form.reset('')
         }, (error) => {
             console.log(error.text);
         });
@@ -26,14 +26,14 @@ const Contact = () => {
     const darkMode = theme.state.darkMode;
 
     return (
-        <div id='Contact' className='contact-form grid lg:grid-cols-2'
+        <div id='Contact' className='contact-form grid lg:grid-cols-2 w-10/12 mx-auto mt-10 mb-10'
         style={{
             // background: darkMode ? 'black' : '#eaeeef',
             color: darkMode? 'white' : '#202527'
           }}
         >
 
-            <div className='m-left'>
+            <div className='m-left '>
                 <div className="awesome">
                     <span>Get in Touch</span>
                     <span>Contact Me</span>
@@ -44,11 +44,11 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="c-right">
+            <div className="c-right ">
                 <form ref={form} onSubmit={sendEmail}>
-                    <input type="text" name='user_name' className='user' placeholder='Name' />
-                    <input type="email" name='user_email' className='user' placeholder='Email' />
-                    <textarea type="text" name='message' className='user' placeholder='Message'/>
+                    <input type="text" name='user_name' className='user lg:w-[20rem] w-60' placeholder='Name' />
+                    <input type="email" name='user_email' className='user lg:w-[20rem] w-60' placeholder='Email' />
+                    <textarea type="text" name='message' className='user lg:w-[20rem] w-60' placeholder='Message'/>
                     <input type="submit" value="Send" className='button' />
                     {done && <p>Send Email Successfully!!</p>}
                     <div className='blur c-blur' style={{background: "var(--purple)"}}></div>

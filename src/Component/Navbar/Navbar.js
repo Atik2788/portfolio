@@ -1,12 +1,24 @@
-import React from 'react';
-import Header from '../Header/Header';
+import React, { useContext } from 'react';
+import Header from '../LeftSide/Header/Header';
 import Toggle from '../Toggle/Toggle';
 import './Navbar.css'
-import Resume from '../../Component/Services/Resume.pdf'
+import { themeContext } from '../../Context';
 
 const Navbar = () => {
+
+    const theme = useContext(themeContext)
+    const darkMode = theme.state.darkMode;
+  
+
+
     return (
-        <div className=' bg-black bg-img bg-img2 order-2'>
+        <div 
+        
+        style={{
+            background: darkMode ? '#313b3e' : '#9de2f2db',
+            color: darkMode ? 'white' : 'black'
+          }}
+          >
             <div className='b-black px-7'>
                 <div className='n-wrapper '>
                     <div className=' n-left'>
@@ -15,7 +27,7 @@ const Navbar = () => {
          
                     </div>
 
-                    <div className='hidden lg:flex pt-3 lg:n-right'>
+                    <div className='hidden lg:flex items-center lg:n-right'>
                         <div className='n-list'>
                             <ul>
                                 <li>Home</li>
@@ -24,7 +36,7 @@ const Navbar = () => {
                                 <li>Projects</li>
                             </ul>
                         </div>
-                        <a target="_blank" href='https://drive.google.com/file/d/1xxcA89TiWbvKhHwJjk31wnbhWO9kzz9a/view?usp=sharing' className='mr-3'>
+                        <a target="_blank" href='https://drive.google.com/file/d/1xxcA89TiWbvKhHwJjk31wnbhWO9kzz9a/view?usp=sharing' className=''>
                             <button className='button'>Resume</button>
                         </a>
 
@@ -34,7 +46,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <Header></Header>
+            {/* <Header></Header> */}
         </div>
     );
 };

@@ -38,13 +38,13 @@
 
 .n-list ul li:hover{
     cursor: pointer;
-    color: rgb(14, 211, 233);
-    font-weight: bold;
+    color: #ff9923;
+    /* font-weight: bold; */
 }
 
 .button:hover{
     background: white;
     cursor: pointer;
-    color: rgb(12, 206, 245);
-    border: 1px solid rgb(22, 213, 238);
+    color: #ff9923;
+    /* border: 1px solid #ff9923; */
 }

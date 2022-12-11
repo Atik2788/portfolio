@@ -1,15 +1,15 @@
 .contact-form{
-    padding: 0 3rem 0 3rem;
+    /* padding: 0 3rem 0 3rem; */
     /* display: flex; */
-    height: 80vh;
-    margin-top: 4rem;
-    padding-top: 3rem;
+    /* height: 80vh; */
+    /* margin-top: 4rem; */
+    /* padding-top: 3rem; */
 }
 
 .c-right{
     display: flex;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     /* flex: 1; */
 }
 
@@ -23,9 +23,10 @@
 }
 
 .c-right .user{
-    width: 20rem;
+
+    /* width: 20rem; */
     height: 2rem;
-    padding: 0.3em;
+    padding: 0.9em;
     outline: none;
     border: 2px solid rgb(46, 225, 245);
     border-radius: 8px;

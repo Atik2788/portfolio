@@ -4,7 +4,6 @@ import hertImogi from '../../img/heartemoji.png'
 import glasses from '../../img/glasses.png'
 import humble from '../../img/humble.png'
 import Card from '../Card/Card';
-import Resume from './Resume.pdf'
 
 const Services = () => {
     return (
@@ -15,7 +14,7 @@ const Services = () => {
                 <span>Services</span>
                 <span>Lorem ipsum dolor, sit Id iusto similique laborum maximporibus <br /> nisi magnam nesciunt reprehenderit.</span> <br />
 
-                <a href={Resume} download> 
+                <a > 
                     <button className='button s-button'>Download Resume</button>
                 </a>
 
