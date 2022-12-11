@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Skills = () => {
+const Project2 = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Skills = () => {
     );
 };
 
-export default Skills;
+export default Project2;
