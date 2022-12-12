@@ -18,7 +18,7 @@ const Project3 = () => {
             <div className='lg:flex lg:px- p-2'>
 
                 {/**********  left side **********/}
-                <div className='w-4/6 lg:mb-0 mb-5'>
+                <div className='lg:w-4/6 lg:mb-0 mb-5'>
                     <div className='lg:p-4 mx-auto text-center'>
                         <div className='p-3 rounded-lg'
                             style={{
@@ -52,7 +52,7 @@ const Project3 = () => {
 
                 {/************ right side ************/}
                 <div className='lg:w-full'>
-                    <div className='p-4 rounded-lg w-5/6'>
+                    <div className='p-4 rounded-lg lg:w-5/6'>
                         <img className='' src="https://i.ibb.co/rHvXhNZ/screencapture-e-learn-5bc9e-web-app-2022-12-11-23-21-53.png" alt="" />
                         <img className='mt-5' src="https://i.ibb.co/5Fkb8Bg/screencapture-e-learn-5bc9e-web-app-courses-2022-12-11-23-28-22.png" alt="" />
                         <img className='mt-5' src="https://i.ibb.co/Wzqq2dB/screencapture-e-learn-5bc9e-web-app-blog-2022-12-11-23-29-08.png" alt="" />

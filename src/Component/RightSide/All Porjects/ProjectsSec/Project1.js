@@ -19,7 +19,7 @@ const Project1 = () => {
             <div className='lg:flex lg:px- p-2'>
 
                 {/**********  left side **********/}
-                <div className='w-4/6 lg:mb-0 mb-5'>
+                <div className='lg:w-4/6 lg:mb-0 mb-5'>
                     <div className='lg:p-4 mx-auto text-center'>
                         <div className='p-3 rounded-lg'
                             style={{
@@ -54,7 +54,7 @@ const Project1 = () => {
 
                 {/************ right side ************/}
                 <div className='lg:w-full'>
-                    <div className='p-4 rounded-lg w-5/6'>
+                    <div className='p-4 rounded-lg lg:w-5/6 mx-auto'>
                         <img className='' src="https://i.ibb.co/85v5tMZ/screencapture-crazy-bikers-b555f-web-app-2022-12-11-18-02-26.png" alt="" />
                         <img className='mt-5' src="https://i.ibb.co/5BXJsvM/screencapture-crazy-bikers-b555f-web-app-bikes-Off-Road-2022-12-11-18-06-19.png" alt="" />
                         <img className='mt-5' src="https://i.ibb.co/dGG0HxK/screencapture-crazy-bikers-b555f-web-app-dashboard-Layout-2022-12-11-18-07-08.png" alt="" />

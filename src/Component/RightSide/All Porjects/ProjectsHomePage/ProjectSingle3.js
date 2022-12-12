@@ -35,10 +35,7 @@ const ProjectSingle3 = () => {
                 <div className='mt-3'>
                     <Link to='/project3'><p className='text-center buttonDetails w-16'><button className=''>Details</button></p></Link>
                 </div>
-                {/* 
-                <div>
-                    <img className='px-2 mt-6' src="https://i.ibb.co/85v5tMZ/screencapture-crazy-bikers-b555f-web-app-2022-12-11-18-02-26.png" alt="" />
-                </div> */}
+
             </div>
         </div>
     );

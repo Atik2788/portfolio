@@ -33,21 +33,17 @@ const Navbar = () => {
                             <ul>
                                 <Link to='/'><li>Home</li></Link>
                                 <Link to='/blog'><li>Blog</li></Link>
-                                {/* <li>Services</li> */}
-                                <li>Projects</li>
+                                <Link to='/projects'><li>Projects</li></Link>                                
                             </ul>
                         </div>
                         <a target="_blank" href='https://drive.google.com/file/d/1xxcA89TiWbvKhHwJjk31wnbhWO9kzz9a/view?usp=sharing' className=''>
                             <button className='button'>Resume</button>
                         </a>
-
-                        {/* <button href='Contact' className='button'>
-                            Contact
-                        </button> */}
+                        
                     </div>
                 </div>
             </div>
-            {/* <Header></Header> */}
+
         </div>
     );
 };

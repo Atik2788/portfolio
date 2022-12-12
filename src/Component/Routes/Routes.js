@@ -5,6 +5,7 @@ import Main from "../Main/Main";
 import Project1 from "../RightSide/All Porjects/ProjectsSec/Project1";
 import Project2 from "../RightSide/All Porjects/ProjectsSec/Project2";
 import Project3 from "../RightSide/All Porjects/ProjectsSec/Project3";
+import Projects from "../RightSide/Projects/Projects";
 
 
 export const routes = createBrowserRouter([
@@ -31,6 +32,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path: '/projects',
+                element: <Projects></Projects>
             }
         ]
     }

@@ -15,7 +15,7 @@ const Skills = () => {
                     color: darkMode ? 'white' : 'black'
                 }}
             >
-                <h2 className='text-lg font-bold'>Skills:</h2>
+                <h2 className='text-lg font-bold'>Skills</h2>
 
                 <div className='grid grid-cols-4 mx-auto gap-1 mt-3'>
                     <span className='buttonSkills'>HTML</span>
