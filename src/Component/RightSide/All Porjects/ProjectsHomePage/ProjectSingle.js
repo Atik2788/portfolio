@@ -12,8 +12,8 @@ const ProjectSingle = () => {
         <div className='projectsCard p-2 rounded-lg mt-5'
 
             style={{
-                background: darkMode ? '#497141' : '#19909f',
-                color: darkMode ? '#f7d721' : 'black'
+                background: darkMode ? '#053783' : '#19909f',
+                color: darkMode ? '#27dccd' : 'black'
             }}
             
             >
@@ -39,7 +39,7 @@ const ProjectSingle = () => {
                 </div>
 
                 <div className='mt-3'>
-                    <Link to='/project1'><p className='text-center buttonDetails w-16'><button className=''>Details</button></p></Link>
+                    <Link to='/project1'><p className='text-center buttonDetails w-16 mb-3'><button className=''>Details</button></p></Link>
                 </div>
                 {/* 
                 <div>

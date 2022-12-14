@@ -40,9 +40,9 @@ const Contact = () => {
 
                 <div className="">
                     <form ref={form} onSubmit={sendEmail}>
-                        <input type="text" name='user_name' className='text-xs py-1 mb-2 border-2 rounded-md pl-2 border-[#ff9923] lg:w-[20rem] w-60' placeholder='Name' />
-                        <input type="email" name='user_email' className='text-xs py-1 mb-2 border-2 rounded-md pl-2 border-[#ff9923] lg:w-[20rem] w-60' placeholder='Email' />
-                        <textarea type="text" name='message' className='text-xs py-1 h-16 border-2 rounded-md pl-2 border-[#ff9923] lg:w-[20rem] w-60' placeholder='Message'/>
+                        <input type="text" name='user_name' className='text-xs py-1 mb-2 border-2 rounded-md pl-2 border-[#27dccd] lg:w-[20rem] w-60' placeholder='Name' />
+                        <input type="email" name='user_email' className='text-xs py-1 mb-2 border-2 rounded-md pl-2 border-[#27dccd] lg:w-[20rem] w-60' placeholder='Email' />
+                        <textarea type="text" name='message' className='text-xs py-1 h-16 border-2 rounded-md pl-2 border-[#27dccd] lg:w-[20rem] w-60' placeholder='Message'/>
                         {done && <p className='text-xs text-green-900 mb-2'>Send Email Successfully!!</p>}
                         <input type="submit" value="Send" className='mb-3 button mt-2' />
                     </form>

@@ -2,10 +2,17 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { themeContext } from '../../../../Context';
 
+
+import { Swiper, SwiperSlide} from 'swiper/react';
+import {FreeMode} from "swiper";
+import 'swiper/css';
+import "swiper/css/free-mode";
+
 const Project1 = () => {
 
     const theme = useContext(themeContext)
     const darkMode = theme.state.darkMode;
+
 
     return (
         <div className=''
@@ -53,12 +60,46 @@ const Project1 = () => {
 
 
                 {/************ right side ************/}
-                <div className='lg:w-full'>
+                {/* <div className='lg:w-full'>
                     <div className='p-4 rounded-lg lg:w-5/6 mx-auto'>
                         <img className='' src="https://i.ibb.co/85v5tMZ/screencapture-crazy-bikers-b555f-web-app-2022-12-11-18-02-26.png" alt="" />
                         <img className='mt-5' src="https://i.ibb.co/5BXJsvM/screencapture-crazy-bikers-b555f-web-app-bikes-Off-Road-2022-12-11-18-06-19.png" alt="" />
                         <img className='mt-5' src="https://i.ibb.co/dGG0HxK/screencapture-crazy-bikers-b555f-web-app-dashboard-Layout-2022-12-11-18-07-08.png" alt="" />
                     </div>
+                </div> */}
+
+                <div className='lg:w-8/12 mx-auto'>
+
+                    <Swiper
+                    freeMode={true}
+                    grabCursor={true}
+                    modules={[FreeMode]}
+                    className="mySwiper"
+                    slidesPerView={5}
+                    spaceBetween={30}
+                    >
+                        <SwiperSlide>
+                            <h1>Slide 1</h1>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <h1>Slide 2</h1>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <h1>Slide 3</h1>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <h1>Slide 4</h1>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <h1>Slide 5</h1>
+                        </SwiperSlide>
+
+                    </Swiper>
+
                 </div>
 
             </div>

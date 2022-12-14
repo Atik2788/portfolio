@@ -29,7 +29,7 @@ const Header = () => {
                 }}
             >
                 <div className='mt-3'>
-                    <img src={Atik1} className='h-36 rounded-full mx-auto border-2 border-[#ff9923]' alt="Atikur Rahman Shanta" />
+                    <img src={Atik1} className='h-36 rounded-full mx-auto border-[3px] border-[#27dccd]' alt="Atikur Rahman Shanta" />
                 </div>
 
                 <div>

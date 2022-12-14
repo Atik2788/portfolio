@@ -1,16 +1,16 @@
 .toggle{
     border: 3px solid;
-    border-color:#ffc446;
+    border-color:#27dccd;
     cursor: pointer;
 }
 .toggle>*{
     width: 1rem;
     height: 1rem;
-    color:#ffc446;
+    color:#27dccd;
 }
 
 .t-button{
     border-radius: 100%;
-    background: #ffc446;
+    background: #27dccd;
     position: absolute;
 }
